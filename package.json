@@ -14,13 +14,13 @@
   "author": "Test",
   "license": "ISC",
   "devDependencies": {
-    "@types/aws-lambda": "8.10.88",
-    "@types/node": "16.11.12",
-    "aws-sdk": "2.1046.0",
+    "@types/aws-lambda": "8.10.89",
+    "@types/node": "16.11.20",
+    "aws-sdk": "2.1058.0",
     "rimraf": "3.0.2",
     "typescript": "4.5.4"
   },
   "dependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.25.0"
   }
 }
