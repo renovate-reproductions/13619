@@ -1,24 +1,28 @@
+buildscript {
+  apply from: "gradle/dependencies.gradle"
+
+  repositories {
+    mavenCentral()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+}
+
 plugins {
+  id 'java'
   id 'com.github.ben-manes.versions' version '0.40.0'
   id 'com.github.spotbugs' version '5.0.3'
 }
 
-apply plugin: 'io.spring.dependency-management'
-
-group = 'io.codefresh'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
 
 repositories {
-	mavenCentral()
+  mavenCentral()
+  maven {
+    url "https://repo.spring.io/plugins-release/"
+  }
 }
 
 dependencies {
-	compileOnly libraries.spotbugs_annotations
-}
-
-test {
-    useJUnit()
-
-    maxHeapSize = '1G'
+  compileOnly libraries.spotbugs_annotations
 }
