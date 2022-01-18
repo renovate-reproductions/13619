@@ -4,7 +4,7 @@
  */
 ext {
   versions = [
-    spotbugs_annotations_version     : '4.5.2',
+    spotbugs_annotations_version     : '4.5.3',
   ]
 
 
