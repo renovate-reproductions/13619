@@ -1,6 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '2.6.1'
-	id 'java'
+  id 'com.github.ben-manes.versions' version '0.40.0'
+  id 'com.github.spotbugs' version '5.0.3'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -14,9 +14,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compileOnly libraries.spotbugs_annotations
 }
 
 test {

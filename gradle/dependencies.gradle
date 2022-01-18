@@ -1,0 +1,14 @@
+/**
+ * For an example
+ * see https://raw.githubusercontent.com/ben-manes/caffeine/master/gradle/dependencies.gradle
+ */
+ext {
+  versions = [
+    spotbugs_annotations     : '4.5.2',
+  ]
+
+
+  libraries = [
+    spotbugs_annotations                           : "com.github.spotbugs:spotbugs-annotations:${versions.spotbugs_annotations}",
+  ]
+}
