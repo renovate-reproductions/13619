@@ -25,5 +25,5 @@ jobs:
           RENOVATE_CONFIG_FILE: renovate/config.js
           RENOVATE_TOKEN: ${{ secrets.MY_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
-          RENOVATE_REPOSITORIES: kaybestmann1123/renovatetest
+          RENOVATE_REPOSITORIES: KayBestmann1123/renovatetest
           LOG_LEVEL: 'debug'
