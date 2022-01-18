@@ -4,11 +4,11 @@
  */
 ext {
   versions = [
-    spotbugs_annotations     : '4.5.2',
+    spotbugs_annotations_version     : '4.5.2',
   ]
 
 
   libraries = [
-    spotbugs_annotations                           : "com.github.spotbugs:spotbugs-annotations:${versions.spotbugs_annotations}",
+    spotbugs_annotations     : "com.github.spotbugs:spotbugs-annotations:${versions.spotbugs_annotations_version}",
   ]
 }
